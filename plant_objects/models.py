@@ -12,7 +12,7 @@ class PAttr:
 
     def __repr__(self):
         return f"PAttr({self.name}:{self.type_})"
-
+x
 
 @dataclass
 class PObject:
@@ -24,7 +24,6 @@ class PObject:
         doc: Detailed description, if any.
         attrs: List (even empty) of attribiuts of itself.
     """
-
     name: str
     doc: str = field(default="", repr=False)
     attrs: List[PAttr] = field(default_factory=list, repr=False)
